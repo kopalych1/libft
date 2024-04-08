@@ -6,13 +6,13 @@
 /*   By: akostian <akostian@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 10:58:17 by akostian          #+#    #+#             */
-/*   Updated: 2024/04/08 11:17:05 by akostian         ###   ########.fr       */
+/*   Updated: 2024/04/08 11:33:21 by akostian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(const char *s)
+unsigned long int	ft_strlen(const char *s)
 {
-	int	length;
+	unsigned long int	length;
 
 	length = 0;
 	while (*s++)
