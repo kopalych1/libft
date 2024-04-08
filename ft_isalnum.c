@@ -6,11 +6,11 @@
 /*   By: akostian <akostian@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 10:04:40 by akostian          #+#    #+#             */
-/*   Updated: 2024/04/08 10:04:40 by akostian         ###   ########.fr       */
+/*   Updated: 2024/04/08 10:56:22 by akostian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalnum(char c)
+int	ft_isalnum(int c)
 {
 	return ((c >= '0' && c <= '9')
 		|| (c >= 'a' && c <= 'z')

@@ -6,11 +6,11 @@
 /*   By: akostian <akostian@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 10:00:32 by akostian          #+#    #+#             */
-/*   Updated: 2024/04/08 10:03:21 by akostian         ###   ########.fr       */
+/*   Updated: 2024/04/08 10:56:44 by akostian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isdigit(char c)
+int	ft_isdigit(int c)
 {
 	return (c >= '0' && c <= '9');
 }
