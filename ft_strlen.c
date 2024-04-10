@@ -6,13 +6,15 @@
 /*   By: akostian <akostian@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 10:58:17 by akostian          #+#    #+#             */
-/*   Updated: 2024/04/08 11:33:21 by akostian         ###   ########.fr       */
+/*   Updated: 2024/04/10 19:23:09 by akostian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned long int	ft_strlen(const char *s)
+#include "libft.h"
+
+size_t	ft_strlen(const char *s)
 {
-	unsigned long int	length;
+	size_t	length;
 
 	length = 0;
 	while (*s++)
