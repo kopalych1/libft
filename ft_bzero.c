@@ -6,7 +6,7 @@
 /*   By: akostian <akostian@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 11:23:59 by akostian          #+#    #+#             */
-/*   Updated: 2024/04/11 03:24:12 by akostian         ###   ########.fr       */
+/*   Updated: 2024/04/11 14:30:13 by akostian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	char	*s_cpy;
+	unsigned char	*s_cpy;
 
-	s_cpy = (char *)s;
+	s_cpy = (unsigned char *)s;
 	while (n-- > 0)
 		*s_cpy++ = 0;
 }

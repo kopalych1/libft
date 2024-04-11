@@ -6,7 +6,7 @@
 /*   By: akostian <akostian@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/09 11:15:23 by akostian          #+#    #+#             */
-/*   Updated: 2024/04/11 03:25:45 by akostian         ###   ########.fr       */
+/*   Updated: 2024/04/11 14:38:02 by akostian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	char	*s1_cpy;
-	char	*s2_cpy;
+	unsigned char	*s1_cpy;
+	unsigned char	*s2_cpy;
 
-	s1_cpy = (char *)s1;
-	s2_cpy = (char *)s2;
+	s1_cpy = (unsigned char *)s1;
+	s2_cpy = (unsigned char *)s2;
 	while (n-- > 0)
 	{
 		if (*s1_cpy != *s2_cpy)

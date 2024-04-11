@@ -6,7 +6,7 @@
 /*   By: akostian <akostian@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/09 11:02:20 by akostian          #+#    #+#             */
-/*   Updated: 2024/04/11 03:24:30 by akostian         ###   ########.fr       */
+/*   Updated: 2024/04/11 14:37:43 by akostian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 char	*ft_memchr(const void *s, int c, size_t n)
 {
-	char	*s_cpy;
+	unsigned char	*s_cpy;
 
-	s_cpy = (char *)s;
+	s_cpy = (unsigned char *)s;
 	while (n-- > 0)
 	{
 		if (*s_cpy == c)
