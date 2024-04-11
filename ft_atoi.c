@@ -6,15 +6,11 @@
 /*   By: akostian <akostian@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 19:10:06 by akostian          #+#    #+#             */
-/*   Updated: 2024/04/08 23:16:07 by akostian         ###   ########.fr       */
+/*   Updated: 2024/04/11 03:17:40 by akostian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isspace(int c)
-{
-	return (c == ' ' || c == '\n' || c == '\t'
-		||c == '\v' || c == '\f' || c == '\r');
-}
+#include "libft.h"
 
 int	ft_atoi(char *addr)
 {
