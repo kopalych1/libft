@@ -1,29 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: akostian <akostian@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/08 16:44:19 by akostian          #+#    #+#             */
-/*   Updated: 2024/04/10 19:41:32 by akostian         ###   ########.fr       */
+/*   Created: 2024/04/11 12:02:28 by akostian          #+#    #+#             */
+/*   Updated: 2024/04/11 12:16:13 by akostian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "libft.h"
 
-# include <stdlib.h>
+char	*ft_strdup(char *src)
+{
+	char			*copy;
+	const size_t	src_len = ft_strlen(src);
 
-int		ft_isalnum(int c);
-int		ft_isalpha(int c);
-int		ft_isascii(int c);
-int		ft_isdigit(int c);
-int		ft_isprint(int c);
-int		ft_isspace(int c);
+	copy = malloc(sizeof(char) * (src_len + 1));
+	if (!copy)
+		return (0);
+	return (ft_memcpy(copy, src, src_len + 1));
+}
+/* 
+#include <stdio.h>
+#include <string.h>
+int	main(void)
+{
+	char	str1[22] = "jshfisheiufhsieufhus";
+	char	*str2;
 
-size_t	ft_strlen(const char *s);
-
-void	*ft_memcpy(void *dst, void *src, size_t n);
-
-#endif
+	str2 = ft_strdup(str1);
+	printf("%s\n", str2);
+} */
