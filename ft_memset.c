@@ -6,11 +6,13 @@
 /*   By: akostian <akostian@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 11:29:16 by akostian          #+#    #+#             */
-/*   Updated: 2024/04/08 13:44:28 by akostian         ###   ########.fr       */
+/*   Updated: 2024/04/11 03:26:22 by akostian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memset(void *b, int c, unsigned long int len)
+#include "libft.h"
+
+void	*ft_memset(void *b, int c, size_t len)
 {
 	char	*b_cpy;
 

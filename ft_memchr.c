@@ -6,11 +6,13 @@
 /*   By: akostian <akostian@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/09 11:02:20 by akostian          #+#    #+#             */
-/*   Updated: 2024/04/09 11:14:15 by akostian         ###   ########.fr       */
+/*   Updated: 2024/04/11 03:24:30 by akostian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_memchr(const void *s, int c, unsigned long int n)
+#include "libft.h"
+
+char	*ft_memchr(const void *s, int c, size_t n)
 {
 	char	*s_cpy;
 
@@ -21,7 +23,7 @@ char	*ft_memchr(const void *s, int c, unsigned long int n)
 			return (s_cpy);
 		s_cpy++;
 	}
-	return ((void *)0);
+	return (NULL);
 }
 
 /* #include <stdio.h>

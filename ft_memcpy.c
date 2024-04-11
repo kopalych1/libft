@@ -6,11 +6,13 @@
 /*   By: akostian <akostian@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 15:48:29 by akostian          #+#    #+#             */
-/*   Updated: 2024/04/08 15:58:00 by akostian         ###   ########.fr       */
+/*   Updated: 2024/04/11 03:26:11 by akostian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memcpy(void *restrict dst, void *restrict src, unsigned long int n)
+#include "libft.h"
+
+void	*ft_memcpy(void *restrict dst, void *restrict src, size_t n)
 {
 	char	*dst_cpy;
 	char	*src_cpy;
