@@ -6,7 +6,7 @@
 /*   By: akostian <akostian@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 16:44:19 by akostian          #+#    #+#             */
-/*   Updated: 2024/04/11 15:30:10 by akostian         ###   ########.fr       */
+/*   Updated: 2024/04/11 15:40:23 by akostian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,8 @@ int		ft_isspace(int c);
 
 /* MEM */
 
+void	ft_bzero(void *s, size_t n);
+void	*ft_calloc(size_t count, size_t size);
 void	*ft_memchr(const void *s, int c, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 void	*ft_memcpy(void *dst, void *src, size_t n);
@@ -48,9 +50,8 @@ int		ft_atoi(char *addr);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
 
-/*  */
+/* FUNCTIONS? */
 
-void	ft_bzero(void *s, size_t n);
-void	*ft_calloc(size_t count, size_t size);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
 
 #endif
