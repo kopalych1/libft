@@ -6,7 +6,7 @@
 /*   By: akostian <akostian@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 16:44:19 by akostian          #+#    #+#             */
-/*   Updated: 2024/04/11 15:43:13 by akostian         ###   ########.fr       */
+/*   Updated: 2024/04/11 16:23:01 by akostian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,14 +36,14 @@ void	*ft_memset(void *b, int c, size_t len);
 
 /* STR */
 
-char	*ft_strchr(char *s, int c);
+char	*ft_strchr(const char *s, int c);
 char	*ft_strdup(char *src);
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 size_t	ft_strlen(const char *s);
 int		ft_strncmp(char *s1, char *s2, size_t n);
 char	*ft_strnstr(char *big, char *little, size_t len);
-char	*ft_strrchr(char *s, int c);
+char	*ft_strrchr(const char *s, int c);
 
 /* TO */
 int		ft_atoi(char *addr);
@@ -53,6 +53,7 @@ int		ft_toupper(int c);
 /* FUNCTIONS? */
 
 char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 
 #endif
