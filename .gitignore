@@ -1,6 +1,4 @@
-*.exe
-*.out
-*.DS_Store
-*.swp
-.vscode
-*.dSYM
+*
+!Makefile
+!libft.h
+!ft_*.c
