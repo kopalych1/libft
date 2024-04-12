@@ -6,7 +6,7 @@
 /*   By: akostian <akostian@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 16:44:19 by akostian          #+#    #+#             */
-/*   Updated: 2024/04/12 17:31:05 by akostian         ###   ########.fr       */
+/*   Updated: 2024/04/12 17:33:47 by akostian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,7 @@ char	*ft_strrchr(const char *s, int c);
 /* TO */
 
 int		ft_atoi(const char *str);
+char	*ft_itoa(int n);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
 
