@@ -6,7 +6,7 @@
 /*   By: akostian <akostian@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 16:44:19 by akostian          #+#    #+#             */
-/*   Updated: 2024/04/11 16:23:01 by akostian         ###   ########.fr       */
+/*   Updated: 2024/04/12 12:47:28 by akostian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,23 +30,25 @@ void	ft_bzero(void *s, size_t n);
 void	*ft_calloc(size_t count, size_t size);
 void	*ft_memchr(const void *s, int c, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
-void	*ft_memcpy(void *dst, void *src, size_t n);
+void	*ft_memcpy(void *restrict dst, const void *restrict src, size_t n);
 void	*ft_memmove(void *dst, const void *src, size_t len);
 void	*ft_memset(void *b, int c, size_t len);
 
 /* STR */
 
 char	*ft_strchr(const char *s, int c);
-char	*ft_strdup(const char *src);
-size_t	ft_strlcat(char *dst, const char *src, size_t size);
-size_t	ft_strlcpy(char *dst, const char *src, size_t size);
+char	*ft_strdup(const char *s1);
+size_t	ft_strlcat(
+			char *restrict dst, const char *restrict src, size_t dstsize);
+size_t	ft_strlcpy(
+			char *restrict dst, const char *restrict src, size_t dstsize);
 size_t	ft_strlen(const char *s);
-int		ft_strncmp(char *s1, char *s2, size_t n);
-char	*ft_strnstr(char *big, char *little, size_t len);
+int		ft_strncmp(const char *s1, const char *s2, size_t n);
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 char	*ft_strrchr(const char *s, int c);
 
 /* TO */
-int		ft_atoi(char *addr);
+int		ft_atoi(const char *str);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
 

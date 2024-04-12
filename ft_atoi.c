@@ -6,29 +6,29 @@
 /*   By: akostian <akostian@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 19:10:06 by akostian          #+#    #+#             */
-/*   Updated: 2024/04/11 03:17:40 by akostian         ###   ########.fr       */
+/*   Updated: 2024/04/12 12:48:16 by akostian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(char *addr)
+int	ft_atoi(const char *str)
 {
 	int	sign;
 	int	ret;
 
-	while (ft_isspace(*addr))
-		addr++;
+	while (ft_isspace(*str))
+		str++;
 	sign = 1;
-	if (*addr == '-' || *addr == '+')
+	if (*str == '-' || *str == '+')
 	{
-		if (*addr == '-')
+		if (*str == '-')
 			sign = -1;
-		addr++;
+		str++;
 	}
 	ret = 0;
-	while (*addr >= '0' && *addr <= '9')
-		ret = 10 * ret + (*addr++ - '0');
+	while (*str >= '0' && *str <= '9')
+		ret = 10 * ret + (*str++ - '0');
 	return (ret * sign);
 }
 
