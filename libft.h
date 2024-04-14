@@ -6,7 +6,7 @@
 /*   By: akostian <akostian@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 16:44:19 by akostian          #+#    #+#             */
-/*   Updated: 2024/04/14 11:04:18 by akostian         ###   ########.fr       */
+/*   Updated: 2024/04/14 13:10:43 by akostian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 # define LIBFT_H
 
 # include <stdlib.h>
+# include <unistd.h>
+# include <fcntl.h>
 
 /* IS */
 
@@ -68,5 +70,9 @@ char	*ft_strtrim(char const *s1, char const *set);
 char	**ft_split(char const *s, char c);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
+
+/* FD_FUNCTIONS */
+
+void	ft_putchar_fd(char c, int fd);
 
 #endif
