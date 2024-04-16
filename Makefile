@@ -3,8 +3,8 @@ NAME = libft.a
 SRC_DIR = src
 INC_DIR = includes
 
-SRCS = $(wildcard ft_*.c)
 BONUS_SRCS = $(wildcard ft_lst*.c)
+SRCS = $(filter-out $(BONUS_SRCS), $(wildcard ft_*.c))
 OBJS = $(SRCS:.c=.o)
 BONUS_OBJS = $(BONUS_SRCS:.c=.o)
 
