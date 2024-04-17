@@ -6,26 +6,33 @@
 /*   By: akostian <akostian@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 14:17:55 by akostian          #+#    #+#             */
-/*   Updated: 2024/04/11 16:39:53 by akostian         ###   ########.fr       */
+/*   Updated: 2024/04/16 15:54:49 by akostian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 char	*ft_strchr(const char *s, int c)
 {
-	while (*s)
+	while (1)
 	{
 		if (*s == c)
 			return ((char *)s);
+		if (!*s)
+			return (NULL);
 		s++;
 	}
-	return ((void *)0);
 }
 
-/* #include <stdio.h>
+/*
+#include <stdio.h>
+#include <string.h>
+
 int	main(void)
 {
-	char	testcase1[22] = "jshfisKeiufhsieufhus";
+	const char	testcase1[22] = "jshfisKeiufhsieufhus";
 
-	printf("%s", ft_strchr(testcase1, 'K'));
+	printf("'%s'\n", ft_strchr(testcase1, '\0'));
+	printf("'%s'\n", strchr(testcase1, '\0'));
 }
  */
