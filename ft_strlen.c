@@ -6,7 +6,7 @@
 /*   By: akostian <akostian@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 10:58:17 by akostian          #+#    #+#             */
-/*   Updated: 2024/04/10 19:23:09 by akostian         ###   ########.fr       */
+/*   Updated: 2024/05/07 16:47:03 by akostian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ size_t	ft_strlen(const char *s)
 {
 	size_t	length;
 
+	if (!s)
+		return (0);
 	length = 0;
 	while (*s++)
 		length++;
