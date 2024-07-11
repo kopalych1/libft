@@ -6,7 +6,7 @@
 /*   By: akostian <akostian@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/11 15:41:50 by akostian          #+#    #+#             */
-/*   Updated: 2024/04/11 16:10:04 by akostian         ###   ########.fr       */
+/*   Updated: 2024/05/07 16:46:55 by akostian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,12 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	if (!ret)
 		return (NULL);
 	i = 0;
-	while (*s1)
-		ret[i++] = *s1++;
-	while (*s2)
-		ret[i++] = *s2++;
+	if (s1)
+		while (*s1)
+			ret[i++] = *s1++;
+	if (s2)
+		while (*s2)
+			ret[i++] = *s2++;
 	ret[i] = '\0';
 	return (ret);
 }
