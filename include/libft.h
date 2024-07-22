@@ -6,7 +6,7 @@
 /*   By: akostian <akostian@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 16:44:19 by akostian          #+#    #+#             */
-/*   Updated: 2024/07/22 15:35:13 by akostian         ###   ########.fr       */
+/*   Updated: 2024/07/22 15:56:35 by akostian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,10 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <fcntl.h>
+# include <stdarg.h>
+# include <limits.h>
+
+# define HEX "0123456789abcdef"
 
 /* IS */
 
@@ -73,6 +77,17 @@ char	*ft_substr(char const *s, unsigned int start, size_t len);
 /* GNL */
 
 char	*get_next_line(int fd);
+
+/* PRINTF */
+
+int		ft_printf(const char *str, ...);
+
+/* PUT */
+int		ft_putchar(int c);
+int		ft_puthex(unsigned long nbr, int is_upper);
+int		ft_putll_nbr(long long nbr);
+int		ft_putptr(void *ptr);
+int		ft_putstr(char *s);
 
 /* FD_FUNCTIONS */
 
