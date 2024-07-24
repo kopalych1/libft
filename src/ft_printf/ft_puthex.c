@@ -6,12 +6,11 @@
 /*   By: akostian <akostian@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/29 15:23:20 by akostian          #+#    #+#             */
-/*   Updated: 2024/07/22 15:56:24 by akostian         ###   ########.fr       */
+/*   Updated: 2024/07/24 04:45:17 by akostian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
 
 int	ft_puthex(unsigned long nbr, int is_upper)
 {
