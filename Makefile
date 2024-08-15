@@ -6,7 +6,7 @@
 #    By: akostian <akostian@student.s19.be>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/07/11 10:07:13 by akostian          #+#    #+#              #
-#    Updated: 2024/07/22 16:00:15 by akostian         ###   ########.fr        #
+#    Updated: 2024/08/15 17:33:32 by akostian         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,28 +24,50 @@ SRCS		= ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c ft_issp
 			  get_next_line.c \
 			  ft_printf.c ft_putchar.c ft_puthex.c ft_putll_nbr.c ft_putptr.c ft_putstr.c
 
-OBJS		= $(SRCS:.c=.o)
+
+BUILD_DIR	= build
+OBJS		= $(addprefix $(BUILD_DIR)/, $(SRCS:%.c=%.o))
 
 CC			= gcc
 CFLAGS		= -Wall -Wextra -Werror -Iinclude
 AR			= ar
 ARFLAGS		= rcs
-RM			= rm -f
+RM			= rm -rf
+
+
 
 all: $(NAME)
+#
+
 
 $(NAME): $(OBJS)
 	$(AR) $(ARFLAGS) $@ $^
+#
 
-%.o: %.c
+
+$(BUILD_DIR):
+	mkdir -p $(BUILD_DIR)
+#
+
+
+$(BUILD_DIR)/%.o: %.c | $(BUILD_DIR)
 	$(CC) $(CFLAGS) -c $< -o $@
+#
+
 
 clean:
-	$(RM) $(OBJS)
+	$(RM) $(BUILD_DIR)
+#
+
 
 fclean: clean
 	$(RM) $(NAME)
+#
+
 
 re: fclean all
+#
+
+
 
 .PHONY: all clean fclean re
