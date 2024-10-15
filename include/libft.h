@@ -6,7 +6,7 @@
 /*   By: akostian <akostian@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 16:44:19 by akostian          #+#    #+#             */
-/*   Updated: 2024/07/22 15:56:35 by akostian         ###   ########.fr       */
+/*   Updated: 2024/10/15 04:26:50 by akostian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 # include <fcntl.h>
 # include <stdarg.h>
 # include <limits.h>
+# include "ANSI_colors.h"
 
 # define HEX "0123456789abcdef"
 
