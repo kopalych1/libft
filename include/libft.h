@@ -6,7 +6,7 @@
 /*   By: akostian <akostian@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 16:44:19 by akostian          #+#    #+#             */
-/*   Updated: 2024/10/15 04:26:50 by akostian         ###   ########.fr       */
+/*   Updated: 2024/10/30 19:08:33 by akostian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,7 @@ void	*ft_memset(void *b, int c, size_t len);
 /* STR */
 
 char	*ft_strchr(const char *s, int c);
+int		ft_strcmp(const char *s1, const char *s2);
 char	*ft_strdup(const char *s1);
 size_t	ft_strlcat(
 			char *restrict dst, const char *restrict src, size_t dstsize);
